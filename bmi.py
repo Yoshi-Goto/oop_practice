@@ -16,12 +16,8 @@ class *:
 
 class BMI:
     def __init__(self, height_m, weight_kg):
-        self.height = height_m
-        self.weight = weight_kg
-        self.value = self.weight / pow(self.height, 2)
+        self.value = weight_kg / pow(height_m, 2)
 
 
 yg = BMI(height_m=1.7, weight_kg=65)
-print(yg.height)
-print(yg.weight)
 print(yg.value)
